@@ -16,6 +16,4 @@ Entre cada link tem uma pagina tratando sobre cada assunto que foi abordado no s
 Entretanto, ainda vou por mais conteudo para deixa-lo ainda mais completo.
 
 
-######License
 
-[MIT](https://choosealicense.com/licenses/mit/)
