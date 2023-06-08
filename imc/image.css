@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+
+.image_conteine{
+    display:flex;
+    flex-direction: row;
+ 
+}
+
+
+
+
+
+
+@media (max-width: 800px) {
+    .image_conteine{
+      
+      display: flex;
+      flex-direction: column;
+    }
+    .image_conteiner>img{
+width: 180px;
+height:180px;
+
+} 
+h2{font-size: 25px;}
+}
+
+
+
+

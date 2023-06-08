@@ -1,0 +1,105 @@
+@charset "UTF-8";
+
+*{
+    margin: 0 auto;
+    padding: 0;
+}
+
+
+/*ajustar responsividade*/
+.conteiner_write,p{
+    font-size: 20px;
+    padding-top: 40px;
+    margin-left: 20px;
+    word-wrap: break-word;
+    padding: 50px;
+
+}
+.write_conteiner{
+  margin: 20px;
+  word-wrap: break-all;
+  padding: 50px;
+}
+
+
+
+.conteiner_article{
+  margin: 20px;
+  word-wrap: break-all;
+  padding: 50px;
+}
+
+.conteiner_write1{
+  margin: 20px;
+ word-wrap: break-all;
+ padding: 50px;
+}
+
+
+
+
+.bg_conteiner{
+    background-color: #c0cff0;;
+    width: 100%;
+    padding: 100px;
+}
+
+.conteiner_bg{
+  background-color: #c0cff0;
+  padding: 50px;
+}
+
+
+.image_cont{
+  display: block;
+  margin: auto;
+}
+
+.footer{
+  text-align: center;
+  margin: 0 auto;
+  padding: 0px;
+  overflow: hidden;
+  margin: 30px;
+}
+
+
+
+.float{
+  transform: translatey(0px);
+  animation: float 6s ease-in-out infinite;
+  z-index: -10;
+}
+
+@keyframes float {
+ 
+  50% {
+  
+    transform: translatey(-20px);
+  }
+  100% {
+   
+    transform: translatey(0px);
+  }
+}
+
+
+/*rede social arruma isso aqui*/
+
+footer{  
+  background-color:#c0cff0;
+  padding: 40px;
+
+}
+
+
+.footer_social {
+  text-align: center;
+  flex-direction: column-reverse;
+}
+
+.icons a{  
+  color: black;
+  font-size: 20px;
+}
+

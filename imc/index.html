@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="icon" href="/logo/cardiology.png" type="logo">
+    <link rel="stylesheet" href="style.css" type="text/css"> 
+    <link rel="stylesheet" href="input.css">
+    <link rel="stylesheet" href="image.css">
+    
+    <title>Calculando seu Indice de Massa Corporal</title>
+</head>
+<body>
+  <div class="header_conteiner">
+    <div class="container"> 
+        <nav class="navbar">
+          <a href="index.html" class="nav-branding" style="color:#6363f8 ;">HealthLife</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="../pagInicial/index.html" class="nav-link" target="_self">Pagina Principal</a>
+            </li>
+            <li class="nav-item">
+              <a href="../alimentacao/index.html" class="nav-link" target="_self">Alimentação</a>
+            </li>
+            <li class="nav-item">
+              <a href="../peso/index.html" class="nav-link" target="_self">Peso Idade</a>
+            </li>
+          </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </nav>
+     </div>
+  </div>
+  <!--mexer no boostrap para tirar a bordar -->
+<div class="conteiner_main"></div>
+
+  <header class="img_conteiner">
+    <main class="bg_conteiner2">
+      <h2><strong>.Calculadora IMC</strong></h2>
+      <div class="range_conteiner"></div>
+      <br>
+      <div class="image_conteine">
+      <p style="font-size:20px; margin:20px;">A classificação do índice de massa corporal (IMC) pode ajudar a identificar problemas de obesidade ou desnutrição, em crianças, adolescentes, adultos e idosos.
+        Além de calcular o valor de IMC, esta calculadora também indica qual o intervalo de peso ideal que deve ter para garantir uma melhor qualidade de vida.
+        Ter um peso dentro do intervalo de peso ideal ajuda ainda a evitar o aparecimento de várias doenças crônicas, como diabetes e hipertensão.
+        <br>
+        Calculadora de <b>IMC</b>
+        Coloque os seus dados na calculadora e calcule o seu <b>IMC:</b></p>
+        <img src="image/10053.jpg" widht="280px" height="280px">
+      </div>
+    </main>
+        <section class="conteiner_bg">
+          <div class="page">
+            <div class="field field_v1">
+              <!--<label for="peso" class="ha-screen-reader"></label>-->
+              <input id="peso" class="field__input" placeholder="Ex: 55.0 ">
+              <span class="field__label-wrap" aria-hidden="true">
+                <span class="field__label">Seu Peso</span>
+              </span>
+            </div>
+            <div class="field field_v2">
+              <!--<label for="altura" class="ha-screen-reader"></label>-->
+              <input id="altura"  class="field__input" placeholder="Ex: 1.80 ">
+              <span class="field__label-wrap" aria-hidden="true">
+                <span class="field__label">Sua Altura</span>
+              </span>  
+            </div>
+          </div>
+            </section>
+          </div>
+    <!--<div class="mb-3">
+        <label for="formGroupExampleInput" class="form-label" >Altura</label>
+        <input type="text" class="form-control" id="formGroupExampleInput" style=" box-shadow: none;" placeholder="Ex: 55.0" >  
+    </div>
+      <div class="mb-3">
+        <label for="formGroupExampleInput2" class="form-label">Peso</label>
+        <input type="text" class="form-control" id="formGroupExampleInput2"  style=" box-shadow: none;"  placeholder="Ex: 1.60">
+      </div>
+      <div>-->
+        <input type="button" value="Calcular" onclick="Calculo()" class="conteiner_button">
+        <p id="resposta"style="font-size:20px;font-weight:bolder;text-align: center; padding:20px;" ></p>
+       </div>
+    </section>
+     <div class="img_index">
+      </div>
+    <article class="conteiner_text">
+      <p style="font-size:20px;margin:20px;">O resultado desta calculadora também informa qual o intervalo de peso ideal para a sua altura.</p>
+      <h2><strong> .Interpretar o resultado de IMC</strong></h2>
+      <div class="range_conteiner"></div>
+      <br>
+      <p style="font-size:20px; margin:30px;">Depois de obter o resultado de IMC, deve-se interpretar o valor utilizando a seguinte tabela:</p>
+      <!--<img src="image/tabela-imc.png" class="img-fluid" alt="Responsive image">-->
+      <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col"></th>
+            <th scope="col">IMC</th>
+            <th scope="col">Classificação</th>
+           
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row"></th>
+            <td>Abaixo de 18,5</td>
+            <td>Abaixo de peso</td>
+     
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Entre 18.6 e 24.9</td>
+            <td>Peso ideal(parabéns)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Entre 25,0 e 29,9</td>
+            <td>Levemente acima do peso</td>
+            
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Entre 30,0 e 34,9</td>
+            <td>Obesidade grau I</td>
+         
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Entre 35,0 e 39,9</td>
+            <td>Obesidade grau II(severa)</td>
+           
+          </tr>
+          <tr>
+            <th scope="row"></th>
+            <td>Acima de 40</td>
+            <td>Obesidade III(mórbida)</td>
+          </tr>
+        </tbody>
+      </table>
+      <br>
+      <p style="font-size:20px; margin:20px;">De acordo com o resultado de IMC também é possível prever o risco que cada pessoa tem de desenvolver doenças crônicas. Isto porque quanto maior é o valor do IMC, maior é a quantidade de gordura acumulada no corpo e maior o risco de doenças como pressão alta, diabetes e problemas cardíacos.
+        Sempre que possível, o resultado de IMC deve ser interpretado por um nutricionista, que irá adequar a dieta de acordo com os objetivos de cada pessoa e seu histórico de saúde.</p>
+      <h2><strong>.O que é o IMC ?</strong></h2>
+      <div class="range_conteiner"></div>
+      <br>
+      <p style="font-size:20px;margin:20px;">
+        IMC é a sigla de Índice de Massa Corporal, um parâmetro que é utilizado para avaliar se o peso está dentro do valor ideal para a altura. 
+
+        Isso significa que, a partir do resultado do IMC é possível saber se a pessoa está acima ou abaixo do peso recomendado e também diagnosticar problemas de saúde como obesidade ou desnutrição.
+        
+        O IMC pode ser utilizado em crianças, adolescentes, adultos ou idosos. 
+      </p>
+           <br>
+      <h2><strong>.Como calcular o IMC?</strong></h2>
+      <div class="range_conteiner"></div>
+      <br>
+      <p style="font-size:20px;margin:20px;">O IMC é calculado dividindo o peso (em kg) pela altura ao quadrado (em m), de acordo com a seguinte fórmula:<strong> IMC = peso / (altura x altura).</strong>
+
+        O resultado de IMC é dado em <strong>kg/m2.</strong></p>
+           <br>
+        <h2><strong> .Por que é importante saber o IMC?</strong></h2>
+        <div class="range_conteiner"></div>
+        <br>
+        <div class="image_conteine">
+        <img src="image/Obesity woman weighing on scale at hospital.jpg" width="300px" height="260px">
+        <p style="font-size:20px; margin:20px;">Saber o IMC é importante para verificar se o peso está de acordo com a altura da pessoa, além de ser importante para saber se existe risco de desenvolver alguma doença. No caso das crianças, o IMC é importante para saber se o desenvolvimento está de acordo com o esperado.
+
+          Além disso, sabendo o IMC, é possível também verificar qual o peso ideal e, assim, saber se a pessoa está acima ou abaixo do peso recomendado para a sua altura. Veja <a href="../peso/index.html" target="_blank">como é feito o cálculo do peso ideal.</a></p>
+        </div>
+       <!-- <img src="..." alt="..." class="img-thumbnail">
+      <img src="..." alt="..." class="img-thumbnail">
+      <img src="..." alt="..." class="img-thumbnail">
+      <img src="..." alt="..." class="img-thumbnail">-->
+    </article>
+    <footer class="conteiner_footer">
+      <h2><strong> .O que fazer para melhorar o IMC?</strong></h2>
+         
+      <p style="font-size:20px;margin:20px;">Para melhorar o IMC, é importante verificar se está acima ou abaixo do peso considerado normal. Quando o IMC está na faixa de magreza, é importante consultar um nutricionista que fará uma avaliação completa, indicando um plano alimentar personalizado que priorize o ganho de peso de forma saudável. </p>
+        <p style="font-size:20px;margin:20px;"> Outro lado, quando o IMC está na faixa do sobrepeso ou da obesidade, o nutricionista pode recomendar uma alimentação com redução de calorias. Além da dieta, normalmente também se recomenda a prática de atividade física regular, que ajudará a acelerar o metabolismo e facilitar a perda de peso, o que influencia diretamente no IMC.
+        </p>
+        
+        
+    </footer>
+  </header>
+  <span class="conteiner_footer2">Feito por <strong>@Debussy_art</strong></span>
+  <script src="script.js"></script>
+
+</body>
+</html>
