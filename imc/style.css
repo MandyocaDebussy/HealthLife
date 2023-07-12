@@ -159,8 +159,9 @@ h2{font-weight: bold; font-size: 40px; margin: 30px;}
   
   li{
     list-style: none;
-    color: #7751ff
+    color: #4e23e9
     ;
+    font-weight:lighter;
   }
   
   a{
@@ -200,7 +201,7 @@ h2{font-weight: bold; font-size: 40px; margin: 30px;}
   }
   
   .nav-link:hover{
-    color: rgb(57, 107, 160);
+    color: rgb(23, 47, 73);
   }
   
   .hamburger{
@@ -215,7 +216,7 @@ h2{font-weight: bold; font-size: 40px; margin: 30px;}
     margin: 5px auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background-color: #7751ff;
+    background-color: #6b4ae2;
   }
   
   @media(max-width:1024px){
@@ -239,7 +240,7 @@ h2{font-weight: bold; font-size: 40px; margin: 30px;}
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: #5381b9;
+      background-color: #d3d3d4;
       width: 100%;
       text-align: center;
       transition: 0.3s;

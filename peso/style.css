@@ -75,7 +75,7 @@ article{
   
   li{
     list-style: none;
-    color: #7751ff
+    color: #563bb8
     ;
   }
   
@@ -116,7 +116,7 @@ article{
   }
   
   .nav-link:hover{
-    color: rgb(57, 107, 160);
+    color: rgb(54, 91, 131);
   }
   
   .hamburger{
@@ -131,7 +131,7 @@ article{
     margin: 5px auto;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
-    background-color: #7751ff;
+    background-color: #6a4bdb;
   }
   
   @media(max-width:1024px){
@@ -155,7 +155,7 @@ article{
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: #5381b9;
+      background-color: #d3d3d4;
       width: 100%;
       text-align: center;
       transition: 0.3s;

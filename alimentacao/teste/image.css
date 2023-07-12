@@ -1,11 +1,9 @@
 @charset "UTF-8";
 
-
 /*ajuste da imagem no conteudo que fica ao lado do texto*/
 .image_conteine{
     display:flex;
     flex-direction: row;
-
 }
 
 
@@ -23,4 +21,5 @@ display: block;
 margin: auto;
 
 }
+ 
 } 

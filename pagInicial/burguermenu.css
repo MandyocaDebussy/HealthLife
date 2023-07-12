@@ -48,10 +48,11 @@
   
   .nav-link{
     transition: 0.3s ease-out;
+    color: #4e2fbe;
   }
   
   .nav-link:hover{
-    color: rgb(95, 123, 153);
+    color: rgb(60, 91, 124);
   }
   
   .hamburger{
@@ -90,7 +91,7 @@
       top: 70px;
       gap: 0;
       flex-direction: column;
-      background-color: #f4f8fd;
+      background-color: #d3d3d4;
       width: 100%;
       text-align: center;
       transition: 0.3s;
